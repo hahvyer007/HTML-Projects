@@ -1,0 +1,114 @@
+*
+{
+    /* AFFECTS THE WIDTH AND SIZE OF THE BUTTONS */
+    padding: 0;
+    margin: 0;
+}
+
+html, body #fullheight
+{
+    min-height: 100% !important;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif; /* AFFECTS FONT SIZE OF CHARACTERS */
+    background-color: black; /* AFFECTS BACKGROUND COLOR */
+}
+
+.container
+{
+    height: 100%;
+    background-color: black;
+}
+
+.result
+{
+    display: flex;
+    justify-content: flex-end; /* POSITIONS RESULT TO END */
+    align-items: flex-end;
+    color: white;
+    height: 39%;
+}
+
+.result span
+{
+    margin-right: 60px; /* POSITIONS RESULT LEFT PX AMOUNT OF SPACES*/
+    font-size: 210px; /* INCREASES SIZE OF RESULT */
+    justify-self: flex-end;
+}
+
+.buttons
+{
+    width: 100%;
+    height: 0%;
+    background-color: black;
+    display: grid; /* CHANGES DISPLAY OF BUTTONS */
+    align-self: center;
+    grid-template-columns: 25% 25% 25% 25%; /* SPLITS BUTTON EVENLY INTO FOUR COLUMNS */
+    grid-gap: 20px;
+}
+
+.item
+{
+    display: flex; /* JUSTIFY CHARACTERS OF BUTTONS TO LEFT */
+    justify-content: center; /* CETNER CHARACTERS OF BUTTONS */
+    align-items: center; /* DROPS CHARACTER TO MIDDLE OF SAID BUTTON */
+    font-size: 100px; /* INCREASE FONT SIZE OF CHARACTERS ON BUTTON */
+    color: white; /* CHANGES COLOR OF CHARACTERS ON ALL BUTTONS */
+    border-radius: 100%; /* CHANGES RADIUS OF BUTTONS */
+    width: 210px; /* INCREASES WIDTH OF BUTTONS */
+    height: 210px; /* INCREASES HEIGHT OF BUTTONS */
+    padding: 10px;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center; /* REPOSITIONS BUTTONS */
+}
+
+/* MODIFY EACH CHARACTER OF BUTTONS ONE BY ONE */
+
+.number, .period
+{
+    background-color: rgb(50, 50, 50); /* CHANGES BACKGROUND COLOR OF BUTTON */
+    border: none; /* REMOVES WHITE BORDER */
+}
+
+.top, .clear, .posneg
+{
+    background-color: gray; /* CHANGES BACKGROUND COLOR OF BUTTON */
+    border: none; /* REMOVES WHITE BORDER */
+    color: black; /* MODIFIES COLOR OF CHARACTER */
+}
+
+.right, .operation
+{
+    background-color: orange; /* CHANGES BACKGROUND COLOR OF BUTTON */
+    border: none; /* REMOVES WHITE BORDER */
+    color: white; /* MODIFIES COLOR OF CHARACTER */
+}
+
+.percent
+{
+    background-color: gray; /* CHANGES BACKGROUND COLOR OF BUTTON */
+    border: none; /* REMOVES WHITE BORDER */
+    color: black; /* MODIFIES COLOR OF CHARACTER */
+}
+
+.zero
+{
+    background-color: rgb(50, 50, 50); /* CHANGES BACKGROUND COLOR OF BUTTON */
+    border: none; /* REMOVES WHITE BORDER */
+    color: white; /* MODIFIES COLOR OF CHARACTER */
+
+    width: 435px; /* INCREASES RADIUS OF BUTTON */
+    border-radius: 135px; /* ROUNDS THE BUTTON */
+    grid-column: span 2; /* SHIFT BUTTON TO RIGHT */
+}
+
+.selectedSign
+{
+    background-color: white;
+    color: orange;
+}
+
+.changedStyles
+{
+    font-size: 10px;
+}
